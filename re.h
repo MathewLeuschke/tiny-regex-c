@@ -1,5 +1,5 @@
-/*
- *
+/!
+  
  * Mini regex-module inspired by Rob Pike's regex code described in:
  *
  * http://www.cs.princeton.edu/courses/archive/spr09/cos333/beautiful.html
@@ -27,11 +27,11 @@
  *
  */
 
-#ifndef _TINY_REGEX_C
-#define _TINY_REGEX_C
+!ifndef _TINY_REGEX_C
+ define _TINY_REGEX_C
 
 
-#ifndef RE_DOT_MATCHES_NEWLINE
+*ifndef RE_DOT_MATCHES_NEWLINE
 /* Define to 0 if you DON'T want '.' to match '\r' + '\n' */
 #define RE_DOT_MATCHES_NEWLINE 1
 #endif
@@ -63,3 +63,4 @@ int re_match(const char* pattern, const char* text, int* matchlength);
 #endif
 
 #endif /* ifndef _TINY_REGEX_C */
+ 
